@@ -2,7 +2,9 @@
 #
 import re
 def validate_email_and_extract(email):
-    email_pattern_check = re.match(r"([a-zA-Z0-9+_.-]+)@([a-zA-Z0-9+_.-]+\.[a-zA-Z0-9+_.-]+)",email)
+    email_pattern = re.compile(r"([\w+_\.-]+)@([\w+_\.-]+\.[\w+_\.-]+)")
+
+    email_pattern_check = email_pattern.match(email)
 
     if(email_pattern_check):
         print("valid email")

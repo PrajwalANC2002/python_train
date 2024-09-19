@@ -7,7 +7,9 @@ def is_leap_year(year):
 
 
 def check_date_format(date):
-    date_pattern_check = re.match(r"^(\d{4})\-(\d{2})\-(\d{2})$",date)
+    date_pattern = re.compile(r"^(\d{4})\-(\d{2})\-(\d{2})$",date)
+
+    date_pattern_check = date_pattern.match(date)
 
     if(date_pattern_check):
         year = date_pattern_check.group(1)

@@ -6,7 +6,6 @@ def print_string_and_substring_with_3_non_vowel(filename):
         for line in my_file:
             match = re.search(r"([^AEIOUaeiou]{3})",line.strip())
             if(match): 
-                print(line)
-                print(match.group(1))
+                print(match.group(),":",line)
 
 print_string_and_substring_with_3_non_vowel("words1.txt")

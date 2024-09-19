@@ -18,6 +18,6 @@ def freq_request_for_each_hour(filename):
                 hour_freq[count] = 1
     
     for count in sorted(hour_freq):
-        print("hour:",count+" frequency of requests: ",hour_freq[count])
+        print("hour:",count + " frequency of requests: ",hour_freq[count])
 
 freq_request_for_each_hour("webapp.log")

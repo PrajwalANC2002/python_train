@@ -18,6 +18,6 @@ def histogram_for_each_hour(filename):
                 hour_freq[count] = 1
     
     for count in sorted(hour_freq):
-        print("hour:",count+"#"*hour_freq[count])
+        print("hour:",count + "#" * hour_freq[count])
 
 histogram_for_each_hour("webapp.log")

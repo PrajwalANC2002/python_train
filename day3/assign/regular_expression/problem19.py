@@ -1,7 +1,7 @@
 # P19. Find the number of requests per employee
 import re
 
-def extract_words(filename):
+def number_of_req_per_emp(filename):
     pattern = re.compile(r"e:(( \w*){1,})")
 
     names_dict = {}
@@ -19,4 +19,4 @@ def extract_words(filename):
         print("name: ",count)  
         print(" no of requests",names_dict[count])
 
-extract_words("webapp.log")
+number_of_req_per_emp("webapp.log")

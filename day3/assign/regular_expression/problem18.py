@@ -1,7 +1,7 @@
 # P18. Extract employee names
 import re
 
-def extract_words(filename):
+def extract_employee_name(filename):
     pattern = re.compile(r"e:(( \w*){1,})")
 
     names_dict = {}
@@ -18,4 +18,4 @@ def extract_words(filename):
     for count in sorted(names_dict):
         print("name:",count)
 
-extract_words("webapp.log")
+extract_employee_name("webapp.log")

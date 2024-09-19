@@ -2,7 +2,7 @@
 
 import re
 
-def extract_words(filename):
+def histogram_req_per_emp(filename):
     pattern = re.compile(r"e:(( \w*){1,})")
 
     names_dict = {}
@@ -19,4 +19,4 @@ def extract_words(filename):
     for count in sorted(names_dict):
         print("name: ",count + "#" * names_dict[count])  
 
-extract_words("webapp.log")
+histogram_req_per_emp("webapp.log")

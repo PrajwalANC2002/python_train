@@ -4,14 +4,14 @@ class Animal:
     #constructor
     def __init__(self,name):
         self.name = name
-        self.food = None
+        self.food = "nil"
 
 
     def say_hello(self):
         print(f"Hello, My name is {self.name}")
 
     def eat(self):
-        if(self.food is None):
+        if(self.food == "nil"):
             print("I do not eat anything")
         else:
             print(f"I eat {self.food}")
